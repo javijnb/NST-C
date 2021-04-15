@@ -1,0 +1,49 @@
+body{
+    background:linear-gradient(-45deg, #5024f0, #7c69e7, #26acd5, #082fdf);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    color: azure;
+    text-align: center;
+}
+
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.imagen{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:  220px;
+    height: 220px;
+}
+
+footer{
+    font-size: 90%;
+}
+
+.caja{
+    width: 250px;
+    height: fit-content;
+    opacity: 0.7;
+    padding: 20px;
+    margin: auto;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: #082fdf;
+}

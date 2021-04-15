@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bluetooth Beacon Monitoring App</title>
+
+    <!-------------------------------------------------------------------------------------------------------------------->
+    
+    <!--DECORACION-->
+    <link rel="stylesheet" href="./app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/init.js"></script>
+
+    <!--MIS SCRIPTS-->
+    <script src="./app.js"></script>
+
+
+    <script defer src="./init-firebase.js"></script>
+
+
+
+
+
+
+
+
+    <!--------------------------------------------------------------------------------------------------------------------> 
+  </head>
+
+  <body>
+    <div>
+      <h1><div class="caja">WELCOME!</div></h1>
+      <h1>Bluetooth Beacon Monitoring App</h1>
+      <h2>FIREBASE PROJECT OVERVIEW</h2>
+    </div>
+
+    <img src="imagen.png" alt="imagen_central" class="imagen"></a>
+
+
+   <!--Zona de pruebas de codigo JS-FIREBASE--> 
+
+    <br><br>
+    <h3>List Blueetooth Items from Firebase Database<br>
+    <input type="button" name="boton_listar1" value="List Node 1" onclick="limpiarTabla(); getNode1()">
+    <input type="button" name="boton_listar2" value="List Node 2" onclick="limpiarTabla(); getNode2()">
+    <!--<input type="button" name="boton_listar9" value="List Node 9" onclick="limpiarTabla(); getNode9()">-->
+
+    <br><br>Clear table                <input type="button" name="boton_limpiar_tabla"  value="Clear" onclick="limpiarTabla()"></h3>
+    
+    
+        <br><br><table id="tabla" style="width:100%">    
+        <tbody>
+          <tr>
+            <th>Node</th>
+            <th>Order</th>
+            <th>Timestamp</th>
+            <th>Scan ID</th>
+            <th>Bluetooth Address</th>
+            <th>Signal Power</th>
+            <th>Device Name</th>
+          </tr>
+        </tbody>
+
+    
+    </table>
+
+  </body>
+  <footer>
+  <br><p class="caja">Developed by Jose Manuel, Sara, Iv&aacute;n & Javi</p>
+  </footer>
+</html>
